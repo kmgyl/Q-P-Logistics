@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>深圳市快美物流有限公司 - 专业跨境电商物流服务商</title>
+<meta name="description" content="深圳市快美物流有限公司，专注头程运输及项目物流，提供专业化的跨境电商物流解决方案。">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span>深圳市快美物流有限公司 · Q&amp;P Logistics Co., Ltd.</span>
+    <span class="lang-switch">
+      <a href="index.html" class="active">中文</a>
+      <a href="en/index.html">English</a>
+    </span>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.png" alt="Q&amp;P Logistics Logo">
+      <span class="brand-text">
+        <span class="cn">深圳市快美物流有限公司</span><br>
+        <span class="en">Q&amp;P Logistics Co., Ltd.</span>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">首页</a>
+      <a href="cn/services.html">服务产品</a>
+      <a href="cn/about.html">关于我们</a>
+      <a href="cn/contact.html">联系我们</a>
+      <a href="cn/track.html">轨迹查询</a>
+      <a class="nav-cta" href="http://www.qpe56.com:8082/" target="_blank">登录系统</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <h1>专业跨境电商物流<br><em>一站式解决方案</em>服务商</h1>
+    <p class="sub">专注头程运输及项目物流，空运、海运、铁路多种运输方式自由组合，北美全境清关派送全程可控，为您打造从出厂到门的高效物流链路。</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="cn/contact.html">立即咨询</a>
+      <a class="btn btn-ghost" href="cn/about.html">了解快美</a>
+    </div>
+    <div class="track-box" id="track">
+      <label>轨迹查询 · Track your shipment（支持 <a href="https://www.17track.net/" target="_blank" style="color:#F26A21;">17TRACK</a> 全球追踪）</label>
+      <div class="track-row">
+        <input type="text" id="YQNum" maxlength="50" placeholder="请输入运单号，如 YT25xxxxxx">
+        <button class="btn btn-primary" onclick="doTrack()">立即查询</button>
+      </div>
+      <script type="text/javascript" src="//www.17track.net/externalcall.js"></script>
+      <script type="text/javascript">
+        function doTrack() {
+          var num = document.getElementById("YQNum").value;
+          if (num === "") { alert("请输入运单号"); return; }
+          YQV5.trackSingleF2({ YQ_ElementId: "YQNum", YQ_Width: 770, YQ_Height: 560, YQ_Fc: "0", YQ_Lang: "zh-cn", YQ_Num: num });
+        }
+      </script>
+    </div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="container">
+    <div class="stat"><div class="num">2018</div><div class="label">公司成立年份</div></div>
+    <div class="stat"><div class="num">3<span> 大城市</span></div><div class="label">加拿大合作海外仓</div></div>
+    <div class="stat"><div class="num">5<span> 种以上</span></div><div class="label">北美末端派送渠道</div></div>
+    <div class="stat"><div class="num">100<span>%</span></div><div class="label">全流程轨迹跟踪</div></div>
+  </div>
+</div>
+
+<section class="section" id="services">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Our Services</span>
+      <h2>核心服务产品</h2>
+      <p>以专业化、高性价比的物流方案，助力跨境电商卖家高效出海</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="thumb"><img src="assets/img/fulfillment.jpg" alt="仓储代发"></div>
+        <div class="body">
+          <h3>仓储代发</h3>
+          <p>提供深圳仓库入仓服务，可根据您的订单需求完成一件代发，包裹直送买家手中，省心省力。</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="assets/img/overseas.jpg" alt="海外仓储"></div>
+        <div class="body">
+          <h3>海外仓储</h3>
+          <p>在加拿大温哥华、蒙特利尔、多伦多拥有多家合作海外仓库，提供仓储中转、换标等一站式服务。</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="assets/img/rail.jpg" alt="多式联运"></div>
+        <div class="body">
+          <h3>多式联运</h3>
+          <p>空运、海运、铁路等多种运输方式自由组合，针对不同货型与时效需求，提供更具性价比的方案。</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="assets/img/truck.jpg" alt="尾程派送"></div>
+        <div class="body">
+          <h3>北美尾程派送</h3>
+          <p>UPS、CAPOST、PUROLATOR、卡车派送、卡车直送等多种服务，覆盖北美全境的末端配送网络。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section gray">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Why Choose Q&amp;P Logistics</span>
+      <h2>为什么选择快美物流</h2>
+      <p>专业团队 + 自有系统 + 全程可控，为每一票货物保驾护航</p>
+    </div>
+    <div class="why">
+      <div class="why-item">
+        <div class="icon">🛃</div>
+        <h3>清关全程可控</h3>
+        <p>海外清关及拆柜交运全程可控，合规申报、便捷清关，货物安全高效出海。</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">🚢</div>
+        <h3>运力灵活组合</h3>
+        <p>空运、海运、铁路多种运输方式自由组合，灵活匹配时效与成本需求。</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">💻</div>
+        <h3>自有物流系统</h3>
+        <p>自主研发物流管理系统，为客户提供全流程轨迹跟踪与在线处理。</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">🤝</div>
+        <h3>一站式解决方案</h3>
+        <p>提供从出厂后直达国外买家到门的一站式物流运输解决方案。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Global Network</span>
+      <h2>北美海外仓布局</h2>
+      <p>三大城市合作海外仓，辐射北美主要市场</p>
+    </div>
+    <div class="network">
+      <div class="net-card">
+        <img src="assets/img/hero.jpg" alt="温哥华">
+        <div class="mask"><h3>温哥华 Vancouver</h3><p>西海岸门户 · 海运首选入港</p></div>
+      </div>
+      <div class="net-card">
+        <img src="assets/img/about.jpg" alt="多伦多">
+        <div class="mask"><h3>多伦多 Toronto</h3><p>东部枢纽 · 电商核心市场</p></div>
+      </div>
+      <div class="net-card">
+        <img src="assets/img/overseas.jpg" alt="蒙特利尔">
+        <div class="mask"><h3>蒙特利尔 Montreal</h3><p>魁北克中心 · 多渠道派送</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container">
+    <div>
+      <h2>期待为您服务</h2>
+      <p>获取专属跨境物流报价与方案，欢迎随时联系我们</p>
+    </div>
+    <a class="btn btn-primary" href="cn/contact.html">联系我们 →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-main">
+    <div class="container foot-grid">
+      <div class="foot-brand">
+        <img src="assets/img/logo.png" alt="Q&amp;P Logistics Logo">
+        <p>深圳市快美物流有限公司 2018 年成立于深圳，是一家专注于出口物流领域的服务公司，侧重于为客户提供专业化的跨境电商物流解决方案。</p>
+      </div>
+      <div>
+        <h4>快速导航</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="cn/services.html">服务产品</a></li>
+          <li><a href="cn/about.html">关于我们</a></li>
+          <li><a href="cn/contact.html">联系我们</a></li>
+          <li><a href="cn/track.html">轨迹查询</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>服务产品</h4>
+        <ul>
+          <li>仓储代发</li>
+          <li>海外仓储</li>
+          <li>多式联运</li>
+          <li>北美尾程派送</li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li>地址：深圳市龙岗区坂田街道马安堂社区中兴路11号新塘智慧园A栋305</li>
+          <li>邮箱：<a href="mailto:xuyan@qpe56.com">xuyan@qpe56.com</a></li>
+          <li>邮箱：<a href="mailto:gzj@kmgyl.com">gzj@kmgyl.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="container">Copyright © 深圳市快美物流有限公司 版权所有 · 粤ICP备18075371号-1</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var t = document.getElementById("navToggle");
+  var m = document.querySelector(".nav-links");
+  t.addEventListener("click", function () { t.classList.toggle("open"); m.classList.toggle("open"); });
+  m.addEventListener("click", function (e) { if (e.target.tagName === "A") { t.classList.remove("open"); m.classList.remove("open"); } });
+})();
+</script>
+</body>
+</html>
