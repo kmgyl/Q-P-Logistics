@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>联系我们 - 深圳市快美物流有限公司</title>
+<meta name="description" content="联系深圳市快美物流有限公司，获取专业跨境物流解决方案。">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span>深圳市快美物流有限公司 · Q&amp;P Logistics Co., Ltd.</span>
+    <span class="lang-switch">
+      <a href="contact.html" class="active">中文</a>
+      <a href="../en/contact.html">English</a>
+    </span>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="../assets/img/logo.png" alt="Q&amp;P Logistics Logo">
+      <span class="brand-text">
+        <span class="cn">深圳市快美物流有限公司</span><br>
+        <span class="en">Q&amp;P Logistics Co., Ltd.</span>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="services.html">服务产品</a>
+      <a href="about.html">关于我们</a>
+      <a href="contact.html" class="active">联系我们</a>
+      <a href="track.html">轨迹查询</a>
+      <a class="nav-cta" href="http://www.qpe56.com:8082/" target="_blank">登录系统</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-hero" style="background-image:url('../assets/img/truck.jpg');">
+  <div class="container">
+    <h1>联系我们</h1>
+    <p>期待为您服务，欢迎垂询业务合作与物流方案</p>
+  </div>
+</header>
+
+<section class="section gray">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="c-card">
+        <div class="icon">📍</div>
+        <h3>公司地址</h3>
+        <p>深圳市龙岗区坂田街道马安堂社区中兴路11号新塘智慧园A栋305</p>
+      </div>
+      <div class="c-card">
+        <div class="icon">📧</div>
+        <h3>咨询</h3>
+        <p><a href="mailto:xuyan@qpe56.com">xuyan@qpe56.com</a></p>
+        <p><a href="mailto:gzj@kmgyl.com">gzj@kmgyl.com</a></p>
+      </div>
+      <div class="c-card">
+        <div class="icon">🖥️</div>
+        <h3>物流系统</h3>
+        <p>客户下单 · 轨迹跟踪 · 在线处理<br><a href="http://www.qpe56.com:8082/" target="_blank">快美物流</a></p>
+      </div>
+    </div>
+
+    <div class="map-panel">
+      <img src="../assets/img/cooperation.jpg" alt="商务合作">
+      <div class="map-note">🤝 期待与您携手合作 · 深圳市龙岗区坂田街道马安堂社区中兴路11号新塘智慧园A栋305</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-main">
+    <div class="container foot-grid">
+      <div class="foot-brand">
+        <img src="../assets/img/logo.png" alt="Q&amp;P Logistics Logo">
+        <p>深圳市快美物流有限公司 2018 年成立于深圳，是一家专注于出口物流领域的服务公司，侧重于为客户提供专业化的跨境电商物流解决方案。</p>
+      </div>
+      <div>
+        <h4>快速导航</h4>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="services.html">服务产品</a></li>
+          <li><a href="about.html">关于我们</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+          <li><a href="track.html">轨迹查询</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>服务产品</h4>
+        <ul>
+          <li>仓储代发</li>
+          <li>海外仓储</li>
+          <li>多式联运</li>
+          <li>北美尾程派送</li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li>地址：深圳市龙岗区坂田街道马安堂社区中兴路11号新塘智慧园A栋305</li>
+          <li>邮箱：<a href="mailto:xuyan@qpe56.com">xuyan@qpe56.com</a></li>
+          <li>邮箱：<a href="mailto:gzj@kmgyl.com">gzj@kmgyl.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="container">Copyright © 深圳市快美物流有限公司 版权所有 · 粤ICP备18075371号-1</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var t = document.getElementById("navToggle");
+  var m = document.querySelector(".nav-links");
+  t.addEventListener("click", function () { t.classList.toggle("open"); m.classList.toggle("open"); });
+  m.addEventListener("click", function (e) { if (e.target.tagName === "A") { t.classList.remove("open"); m.classList.remove("open"); } });
+})();
+</script>
+</body>
+</html>

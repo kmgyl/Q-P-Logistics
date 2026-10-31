@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q&amp;P Logistics - Professional Cross-border Logistics</title>
+<meta name="description" content="Shenzhen Q&amp;P Logistics, founded in 2018, specializes in first-leg shipping and project logistics for cross-border e-commerce.">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span>Q&amp;P Logistics Co., Ltd.</span>
+    <span class="lang-switch">
+      <a href="../cn/index.html">中文</a>
+      <a href="index.html" class="active">English</a>
+    </span>
+  </div>
+</div>
+
+<nav class="navbar">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="../assets/img/logo.png" alt="Q&amp;P Logistics Logo">
+      <span class="brand-text">
+        <!-- <span class="cn">Quick &amp; Perfect Express</span><br> -->
+        <span class="cn">Q&amp;P Logistics Co., Ltd.</span>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="track.html">Tracking</a>
+      <a class="nav-cta" href="http://www.qpe56.com:8082/" target="_blank">Log In</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <h1>One-stop Cross-border<br><em>Logistics Solutions</em> Provider</h1>
+    <p class="sub">Specializing in first-leg shipping and project logistics. Air, sea and rail freely combined, with fully controllable customs clearance and delivery across North America — from factory gate to your customer's door.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="contact.html">Get a Quote</a>
+      <a class="btn btn-ghost" href="about.html">About Q&amp;P Logistics</a>
+    </div>
+    <div class="track-box" id="track">
+      <label>Track your shipment (powered by <a href="https://www.17track.net/" target="_blank" style="color:#F26A21;">17TRACK</a>)</label>
+      <div class="track-row">
+        <input type="text" id="YQNum" maxlength="50" placeholder="Enter your tracking number, e.g. YT25xxxxxx">
+        <button class="btn btn-primary" onclick="doTrack()">Track</button>
+      </div>
+      <script type="text/javascript" src="//www.17track.net/externalcall.js"></script>
+      <script type="text/javascript">
+        function doTrack() {
+          var num = document.getElementById("YQNum").value;
+          if (num === "") { alert("Enter your number."); return; }
+          YQV5.trackSingleF2({ YQ_ElementId: "YQNum", YQ_Width: 770, YQ_Height: 560, YQ_Fc: "0", YQ_Lang: "en", YQ_Num: num });
+        }
+      </script>
+    </div>
+  </div>
+</header>
+
+<div class="stats">
+  <div class="container">
+    <div class="stat"><div class="num">2018</div><div class="label">Year Founded</div></div>
+    <div class="stat"><div class="num">3<span> Cities</span></div><div class="label">Overseas Warehouses in Canada</div></div>
+    <div class="stat"><div class="num">5<span>+</span></div><div class="label">Last-mile Delivery Options</div></div>
+    <div class="stat"><div class="num">100<span>%</span></div><div class="label">End-to-end Tracking</div></div>
+  </div>
+</div>
+
+<section class="section" id="services">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Our Services</span>
+      <h2>Core Services</h2>
+      <p>Professional, cost-effective logistics solutions for cross-border e-commerce sellers</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="thumb"><img src="../assets/img/fulfillment.jpg" alt="Warehouse & Drop-shipping"></div>
+        <div class="body">
+          <h3>Warehouse &amp; Drop-shipping</h3>
+          <p>Inbound warehousing at our Shenzhen warehouse, with per-order drop-shipping that sends each parcel straight to your buyers.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="../assets/img/overseas.jpg" alt="Overseas Warehousing"></div>
+        <div class="body">
+          <h3>Overseas Warehousing</h3>
+          <p>Partner warehouses in Vancouver, Montreal and Toronto, Canada, offering one-stop storage, transiting and relabeling services.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="../assets/img/rail.jpg" alt="Multimodal Transport"></div>
+        <div class="body">
+          <h3>Multimodal Transport</h3>
+          <p>Air, sea and rail options freely combined to match different cargo types and transit-time needs at a better price.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb"><img src="../assets/img/truck.jpg" alt="Last-mile Delivery"></div>
+        <div class="body">
+          <h3>North America Last-mile</h3>
+          <p>UPS, Canada Post, Purolator, LTL and FTL truck delivery — a last-mile network covering all of North America.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section gray">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Why Choose Q&amp;P Logistics</span>
+      <h2>Why Choose Q&amp;P Logistics</h2>
+      <p>Professional team + proprietary system + full control on every shipment</p>
+    </div>
+    <div class="why">
+      <div class="why-item">
+        <div class="icon">🛃</div>
+        <h3>Controllable Clearance</h3>
+        <p>Overseas customs clearance and container devanning under full control — compliant, fast and safe.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">🚢</div>
+        <h3>Flexible Capacity</h3>
+        <p>Air, sea and rail options freely combined to balance speed and cost for any shipment.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">💻</div>
+        <h3>Proprietary System</h3>
+        <p>Our own logistics management system provides full-process tracking and online handling.</p>
+      </div>
+      <div class="why-item">
+        <div class="icon">🤝</div>
+        <h3>One-stop Solution</h3>
+        <p>From factory pickup straight to the overseas buyer's door — a true door-to-door service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-head">
+      <span class="tag">Global Network</span>
+      <h2>North America Warehouses</h2>
+      <p>Partner warehouses in three major Canadian cities, covering key North American markets</p>
+    </div>
+    <div class="network">
+      <div class="net-card">
+        <img src="../assets/img/hero.jpg" alt="Vancouver">
+        <div class="mask"><h3>Vancouver</h3><p>West-coast gateway · Preferred sea-freight port</p></div>
+      </div>
+      <div class="net-card">
+        <img src="../assets/img/about.jpg" alt="Toronto">
+        <div class="mask"><h3>Toronto</h3><p>Eastern hub · Core e-commerce market</p></div>
+      </div>
+      <div class="net-card">
+        <img src="../assets/img/overseas.jpg" alt="Montreal">
+        <div class="mask"><h3>Montreal</h3><p>Quebec center · Multi-channel delivery</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container">
+    <div>
+      <h2>Ready to Serve You</h2>
+      <p>Contact us for a tailored cross-border logistics quote and solution</p>
+    </div>
+    <a class="btn btn-primary" href="contact.html">Contact Us →</a>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-main">
+    <div class="container foot-grid">
+      <div class="foot-brand">
+        <img src="../assets/img/logo.png" alt="Q&amp;P Logistics Logo">
+        <p>Founded in 2018 in Shenzhen, Quick &amp; Perfect Express is a logistics company dedicated to the export market, focusing on professional cross-border e-commerce logistics solutions.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="track.html">Tracking</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li>Warehouse &amp; Drop-shipping</li>
+          <li>Overseas Warehousing</li>
+          <li>Multimodal Transport</li>
+          <li>Last-mile Delivery</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <ul>
+          <li>Address: Room 305, Building A, Xintang Smart Park, No.11 Zhongxing Road, Ma'antang Community, Bantian Street, Longgang District, Shenzhen, China</li>
+          <li>Email: <a href="mailto:xuyan@qpe56.com">xuyan@qpe56.com</a></li>
+          <li>Email: <a href="mailto:gzj@kmgyl.com">gzj@kmgyl.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="container">Copyright © Q&amp;P Logistics Co., Ltd. All Rights Reserved</div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var t = document.getElementById("navToggle");
+  var m = document.querySelector(".nav-links");
+  t.addEventListener("click", function () { t.classList.toggle("open"); m.classList.toggle("open"); });
+  m.addEventListener("click", function (e) { if (e.target.tagName === "A") { t.classList.remove("open"); m.classList.remove("open"); } });
+})();
+</script>
+</body>
+</html>
